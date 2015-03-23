@@ -1,23 +1,22 @@
 .logo{
-	width: 300px;
-	padding-bottom: 30px;
+	width: 400px;
+	padding-bottom: 0px;
 }
+
 
 .btn-default, .btn-lg{
 	border-radius: 5px;
 	border: #64ffeb;
-	width: 300px;
-	height: 60px;
+	width: 500px;
+	height: 70px;
 	font-weight: 500!important;
-
+	padding-top: 20px;
 }
-
 
 
 .cover-heading{
-	padding-bottom: 40px;
+	padding-bottom: 0px;
 }
-
 
 
 .form-control{
@@ -29,9 +28,6 @@
 	padding-left: 10px;
 	
 }
-
-
-
 
 
 .splash{
