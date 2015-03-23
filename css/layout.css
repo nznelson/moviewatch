@@ -1,0 +1,43 @@
+.logo{
+	width: 300px;
+	padding-bottom: 30px;
+}
+
+.btn-default, .btn-lg{
+	border-radius: 5px;
+	border: #64ffeb;
+	width: 300px;
+	height: 60px;
+	font-weight: 500!important;
+
+}
+
+
+
+.cover-heading{
+	padding-bottom: 40px;
+}
+
+
+
+.form-control{
+	width: 250px;
+	height: 55px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 26px;
+	padding-left: 10px;
+	
+}
+
+
+
+
+
+.splash{
+	width: 100%;
+	overflow-x: hidden;
+	position: fixed;
+	z-index: -100;
+	
+}

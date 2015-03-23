@@ -13,11 +13,12 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #161c24;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #64ffeb;
+  
 }
+
 
 
 /*
@@ -27,7 +28,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  
 }
 body {
   color: #fff;
@@ -158,6 +159,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 90%;
   }
 }
