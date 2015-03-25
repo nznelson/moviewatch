@@ -1,17 +1,34 @@
 .logo{
-	width: 400px;
-	padding-bottom: 0px;
+	width: 350px;
+	padding-bottom: 30px;
+}
+
+h1{
+	font-size: 26px;
+	font-weight: 200;
 }
 
 
-.btn-default, .btn-lg{
+.btn-default, .btn-lg, .btn-default:focus{
 	border-radius: 5px;
 	border: #64ffeb;
-	width: 500px;
-	height: 70px;
+	width: 350px;
+	height: 60px;
 	font-weight: 500!important;
-	padding-top: 20px;
+	background: #ff3265;
+	margin-top: 30px;
+	color: #fff;
+	  transition: all 0.2s ease;
 }
+
+.btn-default:hover, .btn-lg:hover{
+	background:#ff3265;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	color: #fff;
+}
+
+
 
 
 .cover-heading{
@@ -26,14 +43,23 @@
 	margin-right: 20px;
 	font-size: 26px;
 	padding-left: 10px;
+	background: rgba(255,255,255,.15);
+	color: #fff;
+	border: none;
 	
+}
+
+.form-control:hover{
+	background: rgba(255,255,255,.1);
 }
 
 
 .splash{
-	width: 100%;
+	left: -10%;
 	overflow-x: hidden;
 	position: fixed;
 	z-index: -100;
 	
+	
 }
+

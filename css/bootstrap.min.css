@@ -3,7 +3,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
 
   -webkit-text-size-adjust: 100%;
@@ -1351,7 +1351,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -3605,7 +3606,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 }
 
 .btn-group-lg>.btn,.btn-lg {
-  padding: 10px 16px;
+  padding: 15px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;

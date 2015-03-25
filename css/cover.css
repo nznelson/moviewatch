@@ -15,7 +15,7 @@ a:hover {
 .btn-default:focus {
   color: #161c24;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #64ffeb;
+  background-color: #9e65ff;
   
 }
 
@@ -32,7 +32,7 @@ body {
 }
 body {
   color: #fff;
-  text-align: center;
+  /*text-align: center;*/
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
@@ -114,7 +114,7 @@ body {
   padding: 0 20px;
 }
 .cover .btn-lg {
-  padding: 10px 20px;
+  
   font-weight: bold;
 }
 
@@ -159,6 +159,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 90%;
+    width: 75%;
   }
 }
