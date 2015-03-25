@@ -1351,8 +1351,8 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -3375,7 +3375,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 12px 18px;
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 200;
@@ -3606,7 +3606,7 @@ select[multiple].form-group-lg .form-control,textarea.form-group-lg .form-contro
 }
 
 .btn-group-lg>.btn,.btn-lg {
-  padding: 15px 16px;
+  padding: 18px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
