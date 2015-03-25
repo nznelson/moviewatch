@@ -1,6 +1,7 @@
 .logo{
-	width: 300px;
+	width: 280px;
 	padding-bottom: 20px;
+	padding-top: 250px;
 }
 
 h1{
@@ -8,6 +9,9 @@ h1{
 	font-weight: 200;
 }
 
+.searchContainer{
+	padding-bottom: 280px;
+}
 
 .btn-default, .btn-lg, .btn-default:focus{
 	border-radius: 5px;
