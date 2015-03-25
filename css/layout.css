@@ -1,6 +1,6 @@
 .logo{
-	width: 350px;
-	padding-bottom: 30px;
+	width: 300px;
+	padding-bottom: 20px;
 }
 
 h1{
@@ -12,23 +12,25 @@ h1{
 .btn-default, .btn-lg, .btn-default:focus{
 	border-radius: 5px;
 	border: #64ffeb;
-	width: 350px;
+	width: 280px;
 	height: 60px;
 	font-weight: 500!important;
 	background: #ff3265;
-	margin-top: 30px;
+	font-size: 16px;
 	color: #fff;
 	  transition: all 0.2s ease;
 }
 
 .btn-default:hover, .btn-lg:hover{
-	background:#ff3265;
+	background:#ff4e79;
 	transition: all 0.2s ease;
 	cursor: pointer;
 	color: #fff;
 }
 
-
+.lead{
+	display: inline-block;
+}
 
 
 .cover-heading{
@@ -37,20 +39,24 @@ h1{
 
 
 .form-control{
-	width: 250px;
-	height: 55px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 230px;
+	height: 60px;
+	margin-left: 10px;
+	margin-right: 30px;
 	font-size: 26px;
 	padding-left: 10px;
-	background: rgba(255,255,255,.15);
-	color: #fff;
+	background: rgba(255,255,255,.5);
+	color: #000;
 	border: none;
 	
 }
 
+#yearSelect{
+	width: 180px;
+}
+
 .form-control:hover{
-	background: rgba(255,255,255,.1);
+	background: rgba(255,255,255,.3);
 }
 
 
