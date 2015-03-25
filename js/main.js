@@ -22,10 +22,18 @@ $('#showButton').click(function() {
 		//rating
 		//synopsis
 		//	title
-		
+		r = $('#resultContainer');
 		$.each(data.results.collection1, function( index, object ) {
 				
+				var html = '<div class=".col-md-2" style="background-color:blue;">';
+				html += '<img src="';
+				html += object.poster.src;
+				html += '"><p>';
+				html += object.title.text;
+				html += '</p></div>';
 				
+				
+				r.append(html);
 				//cast
 				//object.cast.text
 				
