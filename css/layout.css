@@ -9,8 +9,8 @@ h1{
 	font-weight: 200;
 }
 
-.searchContainer{
-	padding-bottom: 280px;
+#searchContainer{
+	padding-bottom: 100px;
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
@@ -69,7 +69,5 @@ h1{
 	overflow-x: hidden;
 	position: fixed;
 	z-index: -100;
-	
-	
 }
 
