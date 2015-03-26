@@ -95,12 +95,18 @@ body{
 
 }
 
+.bottom{
+	background: #27282c;
+	padding-top: 50px;
+}
+
 .spinner {
   width: 50px;
   height: 50px;
 
   position: relative;
-  margin: 100px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .double-bounce1, .double-bounce2 {
