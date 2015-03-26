@@ -93,7 +93,7 @@ $('#showButton').click(function() {
 $('#genreSelect').on('change', function (e) {
     //alert("you changin me");
 	var gen = $("#genreSelect").val();
-	var imgSrc = "/img/" + gen + ".png";
+	var imgSrc = "/img/" + gen + ".jpg";
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
