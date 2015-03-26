@@ -6,7 +6,7 @@
 .logo{
 	width: 280px;
 	padding-bottom: 10px;
-	padding-top: 200px;
+	padding-top: 250px;
 }
 
 h1{
@@ -87,7 +87,7 @@ h1{
 .mastfoot{
 	text-align: center;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 body{
@@ -97,7 +97,7 @@ body{
 
 .bottom{
 	background: #27282c;
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 .spinner {
@@ -106,7 +106,7 @@ body{
 
   position: relative;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .double-bounce1, .double-bounce2 {
