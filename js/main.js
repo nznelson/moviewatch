@@ -23,41 +23,48 @@ $('#showButton').click(function() {
 		//synopsis
 		//	title
 		r = $('#resultContainer');
-		$.each(data.results.collection1, function( index, object ) {
-				
-				var html = '<div class=".col-md-2" style="background-color:blue;">';
-				html += '<img src="';
-				html += object.poster.src;
-				html += '"><p>';
-				html += object.title.text;
-				html += '</p></div>';
-				
-				
-				r.append(html);
-				//cast
-				//object.cast.text
-				
-				//img
-				//object.poster.alt - alt name
-				//object.poster.src - img url
-				
-				//rating
-				//object.rating
-				
-				//synopsis
-				//object.synopsis
-				
-				//title
-				//object.title.text
-				//object.title.href - to imdb
-				
-				//duration
-				//object.duration
-				
-				//year
-				//object.year
-
-		});
+		if (data.count > 0){
+		
+			$.each(data.results.collection1, function( index, object ) {
+					
+					var html = '<div class="movieContainer">';
+					html += '<img id="imgMovie"src="';
+					html += object.poster.src;
+					html += '"><div class="movieRight"><p id="titleMovie">';
+					html += object.title.text;
+					html += '</p>';
+					html += '<img id="rating" src="/img/8.png"> '; //todo rating
+					html += '<p id="ratingText">';
+					html += object.rating;
+					html += '</p><p id="description">';
+					html += object.synopsis;
+					html += '</p></div></div>';
+					
+					r.append(html);
+					//cast
+					//object.cast.text
+					
+					//img
+					//object.poster.alt - alt name
+					//object.poster.src - img url
+					
+					//rating
+					//object.rating
+					
+					//synopsis
+					//object.synopsis
+					
+					//title
+					//object.title.text
+					//object.title.href - to imdb
+					
+					//duration
+					//object.duration
+					
+					//year
+					//object.year
+			});
+		}
 	},
 	error: function (xhr, status) {
 		//handle errors
@@ -66,4 +73,16 @@ $('#showButton').click(function() {
 		console.log(status);
 	}
   });
+});
+
+$('#genreSelect').on('change', function (e) {
+    //alert("you changin me");
+	var gen = $("#genreSelect").val();
+	var imgSrc = "/img/" + gen + ".png";
+	$("#backgroundImg").fadeOut(100, function() {
+            $("#backgroundImg").attr("src", imgSrc);
+        }).fadeIn(100);
+	
+	
+	
 });
