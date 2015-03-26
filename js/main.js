@@ -34,7 +34,7 @@ $('#showButton').click(function() {
 					html += object.title.href;
 					html += '"><img id="imgMovie"src="';
 					html += object.poster.src;
-					html += '"></a><div class="movieRight"><p id="titleMovie"><a href="';
+					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;

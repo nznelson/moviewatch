@@ -6,7 +6,7 @@
 .logo{
 	width: 280px;
 	padding-bottom: 10px;
-	padding-top: 200px;
+	padding-top: 280px;
 }
 
 h1{
@@ -15,12 +15,17 @@ h1{
 
 }
 
+a:hover,{
+	color: rgba(255,255,255,.9);
+	text-decoration: none;
+}
+
 .cover{
 	text-align: center;
 }
 
 #searchContainer{
-	padding-bottom: 50px;
+	padding-bottom: 200px;
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
@@ -59,7 +64,7 @@ h1{
 	margin-right: 30px;
 	font-size: 22px;
 	padding-left: 10px;
-	background: rgba(255,255,255,.5);
+	background: rgba(255,255,255,.6);
 	color: #000;
 	border: none;
 
@@ -87,7 +92,7 @@ h1{
 .mastfoot{
 	text-align: center;
 	margin: 0 auto;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 body{
@@ -96,8 +101,8 @@ body{
 }
 
 .bottom{
-	background: #27282c;
-	padding-top: 50px;
+	 background: rgba(39,40,44,.93);
+	padding-top: 25px;
 }
 
 .spinner {
