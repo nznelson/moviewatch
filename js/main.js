@@ -1,17 +1,40 @@
+var apis = {
+    'action' : {
+		'oldies' : 'ecpx42jg',
+		'90s'    : '6vntqw6m',
+		'recent' : '2stcr3pe',
+		'latest' : '66t7hejw'
+	},
+	'adventure' : {
+		'oldies' : '6rafilia',
+		'90s'    : '9zmhiclg',
+		'recent' : '53816cm8',
+		'latest' : '8svf0frq'
+	},
+	'sci-fi' : {
+		'oldies' : '2fpu8lue',
+		'90s'    : '7a1ojg3u',
+		'recent' : '55c4i100',
+		'latest' : '3osze1zk'
+	},
+
+}
 
 $('#showButton').click(function() {
   //alert("sup");
   $('#resultContainer').empty();
   $("#progress").attr("style", "visibility: visible;");
   
+  endpoint = apis[$("#genreSelect").val()][$("#yearSelect").val()];
   //Send the AJAX call to the server
   $.ajax({
-	url:"https://www.kimonolabs.com/api/ondemand/66t7hejw?apikey=cpesi8CvwJQTYs3HWgy2a3BSRvudeOOi",
+    
+	url:"https://www.kimonolabs.com/api/" + endpoint + "?apikey=cpesi8CvwJQTYs3HWgy2a3BSRvudeOOi",
 	
 	crossDomain:true,
     dataType:"jsonp",
-	contentType:"application/json",
-	data: { "genres": $("#genreSelect").val(), "release_date": $("#yearSelect").val() },
+	
+	data: {},
 	success: function (data) {
 		//Do something with the response
 		//alert("success");
@@ -93,7 +116,7 @@ $('#showButton').click(function() {
 $('#genreSelect').on('change', function (e) {
     //alert("you changin me");
 	var gen = $("#genreSelect").val();
-	var imgSrc = "/img/" + gen + ".png";
+	var imgSrc = "/img/" + gen + ".jpg";
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
