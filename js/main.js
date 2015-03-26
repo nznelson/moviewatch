@@ -44,7 +44,12 @@ $('#showButton').click(function() {
 					html += '<p id="ratingText">';
 					html += object.rating;
 					html += '/10</p><p id="description">';
-					html += object.synopsis;
+					if (typeof object.synopsis.text !== 'undefined') {
+						html += object.synopsis.text;
+					} else {
+						html += object.synopsis;
+					}
+					
 					html += '</p></div></div>';
 					
 					r.append(html);
