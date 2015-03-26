@@ -1,12 +1,14 @@
 .logo{
-	width: 280px;
+	width: 220px;
 	padding-bottom: 20px;
-	padding-top: 250px;
+	padding-top: 200px;
 }
 
 h1{
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 200;
+	
+
 }
 
 #searchContainer{
@@ -14,9 +16,9 @@ h1{
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
-	border-radius: 5px;
+	border-radius: 3px;
 	border: #64ffeb;
-	width: 280px;
+	width: 250px;
 	height: 60px;
 	font-weight: 500!important;
 	background: #ff3265;
@@ -26,7 +28,7 @@ h1{
 }
 
 .btn-default:hover, .btn-lg:hover{
-	background:#ff4e79;
+	background:#ee315f;
 	transition: all 0.2s ease;
 	cursor: pointer;
 	color: #fff;
@@ -47,7 +49,7 @@ h1{
 	height: 60px;
 	margin-left: 10px;
 	margin-right: 30px;
-	font-size: 26px;
+	font-size: 22px;
 	padding-left: 10px;
 	background: rgba(255,255,255,.5);
 	color: #000;
@@ -65,9 +67,15 @@ h1{
 
 
 .splash{
-	left: -10%;
+	top: -10%;
+	left: -15%;
 	overflow-x: hidden;
 	position: fixed;
 	z-index: -100;
+}
+
+.mastfoot{
+	text-align: center;
+	margin: 0 auto;
 }
 

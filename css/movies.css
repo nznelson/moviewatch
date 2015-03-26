@@ -1,16 +1,53 @@
 #resultContainer{
 	background: #27282c;
 	width: 100%;
+	padding-top: 40px;
+	padding-bottom: 20px;
 
 }
 
-
-
 .movieContainer{
-	background: rgba(255,255,255,.2);
-	border-radius: 3px;
-	width: 78%;
+	background: rgba(255,255,255,.08);
+	border-radius: 2px;
+	width: 70%;
 	margin: 0 auto;
-	padding: 20px;
-	margin-top: 20px;
+	padding: 40px;
+	margin-bottom: 20px;
+}
+
+#imgMovie{
+	vertical-align: top;
+}
+
+.movieRight{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#titleMovie{
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#rating{
+	width: 120px;
+	display: inline-block;
+	
+}
+
+#ratingText{
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 10px;
+
+
+}
+
+#description{
+	font-size: 16px;
+}
+
+p{
+	font-weight: 200;
 }
