@@ -17,11 +17,13 @@
 
 #imgMovie{
 	vertical-align: top;
+	position: absolute;
 }
 
 .movieRight{
 	display: inline-block;
-	margin-left: 20px;
+	margin-left: 80px;
+	position: static;
 }
 
 #titleMovie{

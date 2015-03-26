@@ -1,3 +1,8 @@
+.site-wrapper-inner{
+	background: rgba(40,44,48,.85);
+	margin-bottom: 0;
+}
+
 .logo{
 	width: 220px;
 	padding-bottom: 20px;
@@ -7,6 +12,7 @@
 h1{
 	font-size: 22px;
 	font-weight: 200;
+	text-align: center;
 	
 
 }
@@ -18,7 +24,7 @@ h1{
 .btn-default, .btn-lg, .btn-default:focus{
 	border-radius: 3px;
 	border: #64ffeb;
-	width: 250px;
+	width: 200px;
 	height: 60px;
 	font-weight: 500!important;
 	background: #ff3265;
@@ -62,7 +68,7 @@ h1{
 }
 
 .form-control:hover{
-	background: rgba(255,255,255,.3);
+	background: rgba(255,255,255,.4);
 }
 
 
