@@ -4,16 +4,16 @@
 }
 
 .logo{
-	width: 220px;
-	padding-bottom: 20px;
+	width: 280px;
+	padding-bottom: 10px;
 	padding-top: 200px;
 }
 
 h1{
 	font-size: 22px;
 	font-weight: 200;
-	text-align: center;
-	
+
+
 
 }
 
@@ -89,4 +89,5 @@ h1{
 
 body{
 	background: #282c30;
+	
 }
