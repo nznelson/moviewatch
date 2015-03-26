@@ -1,11 +1,13 @@
-//Listen when a button, with a class of "myButton", is clicked
-//You can use any jQuery/JavaScript event that you'd like to trigger the call
+
 $('#showButton').click(function() {
   //alert("sup");
-//Send the AJAX call to the server
+  $('#resultContainer').empty();
+  $("#progress").attr("style", "visibility: visible;");
+  
+  //Send the AJAX call to the server
   $.ajax({
-	url:"https://www.kimonolabs.com/api/66t7hejw?apikey=cpesi8CvwJQTYs3HWgy2a3BSRvudeOOi",
-	beforeSend: function(xhr) { xhr.setRequestHeader('authorization', 'Bearer nsEh7suy3sQKmQAtjY74Bym4yt2IhP8a'); },
+	url:"https://www.kimonolabs.com/api/ondemand/66t7hejw?apikey=cpesi8CvwJQTYs3HWgy2a3BSRvudeOOi",
+	
 	crossDomain:true,
     dataType:"jsonp",
 	contentType:"application/json",
@@ -14,7 +16,7 @@ $('#showButton').click(function() {
 		//Do something with the response
 		//alert("success");
 		console.log(data);
-		
+		$("#progress").attr("style", "visibility: hidden;");
 		
 		
 		//poster
@@ -30,13 +32,17 @@ $('#showButton').click(function() {
 					var html = '<div class="movieContainer">';
 					html += '<img id="imgMovie"src="';
 					html += object.poster.src;
-					html += '"><div class="movieRight"><p id="titleMovie">';
+					html += '"><div class="movieRight"><p id="titleMovie"><a href="';
+					html += object.title.href;
+					html += '">';
 					html += object.title.text;
-					html += '</p>';
+					html += ' ';
+					html += object.year;
+					html += '</a></p>';
 					html += '<img id="rating" src="/img/8.png"> '; //todo rating
 					html += '<p id="ratingText">';
 					html += object.rating;
-					html += '</p><p id="description">';
+					html += '/10</p><p id="description">';
 					html += object.synopsis;
 					html += '</p></div></div>';
 					
@@ -71,6 +77,7 @@ $('#showButton').click(function() {
 		//alert("error");
 		console.log(xhr);
 		console.log(status);
+		$("#progress").attr("style", "visibility: hidden;");
 	}
   });
 });
