@@ -32,7 +32,7 @@ $('#showButton').click(function() {
 					var html = '<div class="movieContainer">';
 					html += '<img id="imgMovie"src="';
 					html += object.poster.src;
-					html += '"><div class="movieRight"><p id="titleMovie"><a href="';
+					html += '"><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;

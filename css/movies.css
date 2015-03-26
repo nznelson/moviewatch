@@ -1,5 +1,5 @@
 #resultContainer{
-	background: #27282c;
+	background: rgba(39,40,44,.93);
 	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 30px;
@@ -81,7 +81,7 @@
 	font-size: 12px;
 	padding-left: 10px;
 	color: rgba(255,255,255,.5);
-	margin-top: -3px;
+	
 	
 
 
