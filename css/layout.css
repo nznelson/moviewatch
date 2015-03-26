@@ -1,12 +1,12 @@
 .site-wrapper-inner{
-	background: rgba(38,44,50,.88);
+	background: rgba(38,44,50,.9);
 	margin-bottom: 0;
 }
 
 .logo{
 	width: 280px;
 	padding-bottom: 10px;
-	padding-top: 280px;
+	/*padding-top: 270px;*/
 }
 
 h1{
@@ -15,17 +15,24 @@ h1{
 
 }
 
-a:hover,{
-	color: rgba(255,255,255,.9);
-	text-decoration: none;
-}
+
 
 .cover{
 	text-align: center;
 }
 
+.cover-container{
+	height: 100vh;
+}
+
+.inner{
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 #searchContainer{
-	padding-bottom: 200px;
+	/*padding-bottom: 200px;*/
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
@@ -60,8 +67,8 @@ a:hover,{
 .form-control{
 	width: 230px;
 	height: 60px;
-	margin-left: 10px;
-	margin-right: 30px;
+	margin-left: 20px;
+	margin-right: 20px;
 	font-size: 22px;
 	padding-left: 10px;
 	background: rgba(255,255,255,.6);
