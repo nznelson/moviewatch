@@ -76,8 +76,13 @@ $('#showButton').click(function() {
 });
 
 $('#genreSelect').on('change', function (e) {
-    alert("you changin me");
+    //alert("you changin me");
 	var gen = $("#genreSelect").val();
-	var imgSrc = "/img/" + gen + ".jpg";
+	var imgSrc = "/img/" + gen + ".png";
+	$("#backgroundImg").fadeOut(100, function() {
+            $("#backgroundImg").attr("src", imgSrc);
+        }).fadeIn(100);
+	
+	
 	
 });
