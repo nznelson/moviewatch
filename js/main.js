@@ -28,7 +28,7 @@ $('#showButton').click(function() {
 		if (data.count > 0){
 		
 			$.each(data.results.collection1, function( index, object ) {
-					
+					rate = Math.round(object.rating);
 					var html = '<div class="movieContainer">';
 					html += '<img id="imgMovie"src="';
 					html += object.poster.src;
@@ -39,7 +39,8 @@ $('#showButton').click(function() {
 					html += ' ';
 					html += object.year;
 					html += '</a></p>';
-					html += '<img id="rating" src="/img/8.png"> '; //todo rating
+					html += '<img id="rating" src="/img/'
+					html += rate + '.png"> '; //todo rating
 					html += '<p id="ratingText">';
 					html += object.rating;
 					html += '/10</p><p id="description">';
