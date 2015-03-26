@@ -12,7 +12,7 @@
 	width: 70%;
 	margin: 0 auto;
 	padding: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 #imgMovie{
@@ -36,6 +36,7 @@
 #rating{
 	width: 120px;
 	display: inline-block;
+	
 
 	
 }
@@ -46,6 +47,7 @@
 	padding-left: 10px;
 	color: rgba(255,255,255,.5);
 	
+	
 
 
 }
@@ -53,6 +55,7 @@
 #description{
 	font-size: 16px;
 	padding: 0;
+	color: rgba(255,255,255,.9);
 }
 
 p{
