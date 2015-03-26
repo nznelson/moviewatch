@@ -11,7 +11,7 @@ var apis = {
 		'recent' : '53816cm8',
 		'latest' : '8svf0frq'
 	},
-	'sci-fi' : {
+	'sci_fi' : {
 		'oldies' : '2fpu8lue',
 		'90s'    : '7a1ojg3u',
 		'recent' : '55c4i100',
