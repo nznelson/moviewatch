@@ -82,6 +82,8 @@ $('#genreSelect').on('change', function (e) {
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
+		
+	
 	
 	
 	
