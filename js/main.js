@@ -30,9 +30,11 @@ $('#showButton').click(function() {
 			$.each(data.results.collection1, function( index, object ) {
 					rate = Math.round(object.rating);
 					var html = '<div class="movieContainer">';
-					html += '<img id="imgMovie"src="';
+					html += '<a href="';
+					html += object.title.href;
+					html += '"><img id="imgMovie"src="';
 					html += object.poster.src;
-					html += '"><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
+					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;
