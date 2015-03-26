@@ -64,7 +64,7 @@ $('#showButton').click(function() {
 					html += ' ';
 					html += object.year;
 					html += '</a></p>';
-					html += '<img id="rating" src="/img/'
+					html += '<img id="rating" src="img/'
 					html += rate + '.png"> '; //todo rating
 					html += '<p id="ratingText">';
 					html += object.rating;
@@ -116,7 +116,7 @@ $('#showButton').click(function() {
 $('#genreSelect').on('change', function (e) {
     //alert("you changin me");
 	var gen = $("#genreSelect").val();
-	var imgSrc = "/img/" + gen + ".jpg";
+	var imgSrc = "img/" + gen + ".jpg";
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
