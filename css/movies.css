@@ -1,8 +1,8 @@
 #resultContainer{
 	background: #27282c;
 	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 20px;
+	padding-top: 60px;
+	padding-bottom: 30px;
 
 }
 
@@ -11,7 +11,7 @@
 	border-radius:3px;
 	width: 70%;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 30px;
 	margin-bottom: 20px;
 }
 
@@ -27,14 +27,16 @@
 }
 
 #titleMovie{
-	font-size: 22px;
+	font-size: 21px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	
 }
 
 #rating{
 	width: 120px;
 	display: inline-block;
+
 	
 }
 
@@ -43,12 +45,14 @@
 	font-size: 12px;
 	padding-left: 10px;
 	color: rgba(255,255,255,.5);
+	
 
 
 }
 
 #description{
 	font-size: 16px;
+	padding: 0;
 }
 
 p{
