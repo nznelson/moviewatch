@@ -12,7 +12,7 @@ h1{
 }
 
 #searchContainer{
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
@@ -54,7 +54,7 @@ h1{
 	background: rgba(255,255,255,.5);
 	color: #000;
 	border: none;
-	
+
 }
 
 #yearSelect{
@@ -67,11 +67,13 @@ h1{
 
 
 .splash{
-	top: -10%;
+	top: -15%;
+	/*top: -50%;*/
 	left: -15%;
 	overflow-x: hidden;
 	position: fixed;
 	z-index: -100;
+	background: rgba(0,0,0,.5);
 }
 
 .mastfoot{
