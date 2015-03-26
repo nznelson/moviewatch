@@ -1,5 +1,6 @@
 #resultContainer{
-	background: rgba(39,40,44,.93);
+	background: rgba(39,40,44,.9);
+	
 	width: 100%;
 	padding-top: 60px;
 	padding-bottom: 30px;
@@ -7,7 +8,7 @@
 }
 
 .movieContainer{
-	background: rgba(255,255,255,.08);
+	background: #393a3e;
 	border-radius:3px;
 	width: 70%;
 	margin: 0 auto;
