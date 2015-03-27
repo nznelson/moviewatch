@@ -108,7 +108,7 @@ body{
 }
 
 .bottom{
-	 background: rgba(39,40,44,.93);
+	 background: rgba(39,40,44,.9);
 	padding-top: 100px;
 }
 
@@ -153,4 +153,10 @@ body{
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+
+@media only screen and (max-width : 560px) {
+	.cover-container{
+	height: 600px;
+}
 }
