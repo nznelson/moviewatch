@@ -65,8 +65,8 @@
 }
 
 #titleMovie{
-	font-size: 21px;
-	margin-top: 10px;
+	font-size: 20px;
+	margin-top: 12px;
 	margin-bottom: 0px;
 	line-height: 1.2;
 	
@@ -108,7 +108,7 @@
 #description{
 	font-size: 15px;
 	padding-top: 0px;
-	padding-bottom: 10px;
+	line-height: 1.7;
 	color: rgba(255,255,255,1);
 
 }
@@ -122,3 +122,37 @@
 p{
 	font-weight: 200;
 }
+
+@media only screen and (max-width : 560px) {
+		#imgMovie{
+			position: relative;
+		}
+
+		.movieRight{
+			margin-left: 0;
+		}
+
+		.movieContainer{
+			width: 90%;
+		}
+		#ratingText{
+			padding-left: 0;
+		}
+		#genre{
+			padding-left: 0;
+		}
+		#duration{
+			padding-left: 10px;
+		}
+
+		#titleMovie{
+			font-size: 18px;
+			padding-top: 10px;
+		}
+
+		#description{
+			padding-top: 20px;
+		}
+
+
+	}

@@ -160,7 +160,7 @@ body{
 
 	}
 	.cover-container p{
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	
 	}
 	.lead{
@@ -176,6 +176,20 @@ body{
 	}
 	#yearSelect{
 		width: 230px;
+	}
+	.splash{
+		height: 100%;
+		width:auto;
+		left: -80%;
+	}
+	.spinner{
+		margin-bottom: 80px;
+	}
+	.bottom{
+		padding-top: 0;
+	}
+	h1{
+		font-size: 20px;
 	}
 	
 }
