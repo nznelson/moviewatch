@@ -74,7 +74,7 @@ $('#showButton').click(function() {
 					var i = 0;
 					for (var genre_tag in object.genre_tags){
 						if (i>0){
-							html += " | ";
+							html += "  |  ";
 						}
 						html +=  object.genre_tags[genre_tag].text;
 						i+=1;
