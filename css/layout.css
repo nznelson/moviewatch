@@ -154,6 +154,13 @@ body{
   }
 }
 
+@media only screen and (max-width : 960px){
+	.btn-default, .btn-lg, .btn-default:focus{
+		width: 300px;
+
+	}
+}
+
 @media only screen and (max-width : 560px) {
 	.cover-container{
 	height: 600px;
