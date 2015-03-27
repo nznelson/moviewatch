@@ -103,6 +103,7 @@ h1{
 	text-align: center;
 	margin: 0 auto;
 	padding-bottom: 10px;
+	display: table;
 }
 
 body{
