@@ -17,6 +17,12 @@ var apis = {
 		'recent' : '6g782s6m',
 		'latest' : 'd9srm54w'
 	},
+	'horror' : {
+		'oldies' : '2rbj2g58',
+		'90s'    : '6rcg44we',
+		'recent' : '2gx67pzg',
+		'latest' : 'eg399fhw'
+	},
 	'sci_fi' : {
 		'oldies' : '2fpu8lue',
 		'90s'    : '7a1ojg3u',
