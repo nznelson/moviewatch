@@ -11,11 +11,41 @@ var apis = {
 		'recent' : '53816cm8',
 		'latest' : '8svf0frq'
 	},
+	'animation' : {
+		'oldies' : '5i6pd0bw',
+		'90s'    : 'e3ki0ofg',
+		'recent' : '7q53ga2g',
+		'latest' : '4ywlw76o'
+	},
 	'comedy' : {
 		'oldies' : '57mt5lce',
 		'90s'    : 'bv78ue0y',
 		'recent' : '6g782s6m',
 		'latest' : 'd9srm54w'
+	},
+	'crime' : {
+		'oldies' : 'b63o9vva',
+		'90s'    : '8i3rjv90',
+		'recent' : '33xq66wg',
+		'latest' : '8aemrnla'
+	},
+	'drama' : {
+		'oldies' : 'a6mv9i7m',
+		'90s'    : 'bbzy0swe',
+		'recent' : 'ah3ru530',
+		'latest' : '78gjh2wo'
+	},
+	'family' : {
+		'oldies' : 'efavxq3s',
+		'90s'    : 'cfyzr8fo',
+		'recent' : '3kk3hh3c',
+		'latest' : 'dsgcixge'
+	},
+	'fantasy' : {
+		'oldies' : '35n1iv4k',
+		'90s'    : '5xo0uu62',
+		'recent' : '1w2xrg3g',
+		'latest' : 'di48k714'
 	},
 	'horror' : {
 		'oldies' : '2rbj2g58',
@@ -28,6 +58,12 @@ var apis = {
 		'90s'    : '7a1ojg3u',
 		'recent' : '55c4i100',
 		'latest' : '3osze1zk'
+	},
+	'thriller' : {
+		'oldies' : 'd9jccpgo',
+		'90s'    : '2flknxy2',
+		'recent' : '5acl56ho',
+		'latest' : 'a6eygxv6'
 	},
 
 }
@@ -67,7 +103,7 @@ $('#showButton').click(function() {
 					var html = '<div class="movieContainer">';
 					html += '<a href="';
 					html += object.title.href;
-					html += '"><img id="imgMovie"src="';
+					html += '"><img id="imgMovie" src="';
 					html += object.poster.src;
 					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
