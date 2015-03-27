@@ -68,13 +68,27 @@ $('#showButton').click(function() {
 					html += rate + '.png"> '; //todo rating
 					html += '<p id="ratingText">';
 					html += object.rating;
-					html += '/10</p><p id="description">';
+					html += '/10</p><p id="duration">';
+					html += object.duration;
+					html += '</p> <p id="genre">';
+					var i = 0;
+					for (var genre_tag in object.genre_tags){
+						if (i>0){
+							html += " | ";
+						}
+						html +=  object.genre_tags[genre_tag].text;
+						i+=1;
+					}
+					
+					html += '</p><p id="description">';
 					if (typeof object.synopsis.text !== 'undefined') {
 						html += object.synopsis.text;
 					} else {
 						html += object.synopsis;
 					}
 					
+					html += '</p><p id="cast">';
+					html += object.cast.text;
 					html += '</p></div></div>';
 					
 					r.append(html);
@@ -120,9 +134,5 @@ $('#genreSelect').on('change', function (e) {
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
-		
-	
-	
-	
-	
+
 });
