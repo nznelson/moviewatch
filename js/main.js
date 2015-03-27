@@ -18,9 +18,9 @@ var apis = {
 		'latest' : 'd9srm54w'
 	},
 	'horror' : {
-		'oldies' : '2gx67pzg',
+		'oldies' : '2rbj2g58',
 		'90s'    : '6rcg44we',
-		'recent' : '2rbj2g58',
+		'recent' : '2gx67pzg',
 		'latest' : 'eg399fhw'
 	},
 	'sci_fi' : {
