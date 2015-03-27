@@ -1,5 +1,8 @@
+google.load('search', '1');
+//var imageSearch;
+
 var apis = {
-    'action' : {
+    'action' : { 	
 		'oldies' : 'ecpx42jg',
 		'90s'    : '6vntqw6m',
 		'recent' : '2stcr3pe',
@@ -65,7 +68,6 @@ var apis = {
 		'recent' : '5acl56ho',
 		'latest' : 'a6eygxv6'
 	},
-
 }
 
 $('#showButton').click(function() {
@@ -88,23 +90,18 @@ $('#showButton').click(function() {
 		//alert("success");
 		console.log(data);
 		$("#progress").attr("style", "visibility: hidden;");
-		
-		
-		//poster
-		//cast
-		//rating
-		//synopsis
-		//	title
 		r = $('#resultContainer');
 		if (data.count > 0){
-		
+			var j=0;
 			$.each(data.results.collection1, function( index, object ) {
+			
 					rate = Math.round(object.rating);
 					var html = '<div class="movieContainer">';
 					html += '<a href="';
 					html += object.title.href;
-					html += '"><img id="imgMovie" src="';
-					html += object.poster.src;
+					
+					html += '"><img class="imgMovie" id="imgMovie' + j + '" src="';
+					//html += object.poster.src;
 					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
@@ -140,28 +137,28 @@ $('#showButton').click(function() {
 					html += '</p></div></div>';
 					
 					r.append(html);
-					//cast
-					//object.cast.text
 					
-					//img
-					//object.poster.alt - alt name
-					//object.poster.src - img url
-					
-					//rating
-					//object.rating
-					
-					//synopsis
-					//object.synopsis
-					
-					//title
-					//object.title.text
-					//object.title.href - to imdb
-					
-					//duration
-					//object.duration
-					
-					//year
-					//object.year
+					//Google image search
+					// Create an Image Search instance.
+					var imageSearch = new google.search.ImageSearch();
+					var n = j;
+					// Set searchComplete as the callback function when a search is 
+					// complete.  The imageSearch object will have results in it.
+					imageSearch.setSearchCompleteCallback(this, function () {
+
+						// Check that we got results
+						if (imageSearch.results && imageSearch.results.length > 0) {
+						  //the first image should be good enough
+						  var results = imageSearch.results;
+						  var result = results[0];
+						  // set the correct img src
+						  $("#imgMovie" + n).attr("src", result.tbUrl);	
+						}
+					}, null);
+
+					// find the movie poster image
+					imageSearch.execute(object.title.text + ' ' + object.year + ' movie poster');
+					j+=1;
 			});
 		}
 	},
@@ -182,5 +179,5 @@ $('#genreSelect').on('change', function (e) {
 	$("#backgroundImg").fadeOut(100, function() {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
-
 });
+
