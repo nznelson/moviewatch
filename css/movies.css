@@ -54,13 +54,14 @@
 .imgMovie{
 	vertical-align: top;
 	position: absolute;
+	width: 70px;
 }
 
 
 
 .movieRight{
 	display: inline-block;
-	margin-left: 80px;
+	margin-left: 90px;
 	position: static;
 }
 
@@ -110,6 +111,7 @@
 	padding-top: 0px;
 	line-height: 1.7;
 	color: rgba(255,255,255,1);
+	text-align: justify;
 
 }
 
@@ -124,7 +126,7 @@ p{
 }
 
 @media only screen and (max-width : 560px) {
-		#imgMovie{
+		.imgMovie{
 			position: relative;
 		}
 
