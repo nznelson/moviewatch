@@ -52,14 +52,16 @@
 
 
 .imgMovie{
-	vertical-align: top;
-	position: absolute;
+	position: relative;
 	width: 70px;
+	height: 100px;
 }
 
 .imgMovieContainer{
 	width: 70px;
-	height:100px;			
+	height:100px;	
+	vertical-align: top;
+	position: absolute;		
 }
 
 
@@ -72,7 +74,7 @@
 
 #titleMovie{
 	font-size: 20px;
-	margin-top: 16px;
+	margin-top: 20px;
 	margin-bottom: 0px;
 	line-height: 1.2;
 	
@@ -132,6 +134,71 @@ p{
 	font-weight: 200;
 }
 
+.loader {
+  font-size: 10px;
+  display: inline-block;
+  z-index: -1;
+  text-indent: -9999em;
+  top:-60%;
+  left: 33%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+}
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #FFF;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.loader:after {
+  background: #393a3e;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
 @media only screen and (max-width : 560px) {
 		.imgMovie{
 			position: relative;
@@ -142,6 +209,7 @@ p{
 		.imgMovieContainer{
 			width: 60px;
 			height: 85px;
+			position: absolute;
 		}
 
 		.movieRight{
@@ -182,14 +250,22 @@ p{
 		}
 
 		.topInfo{
-			position: absolute !important;
-	  		padding-left: 20px; 
+			
+	  		 
+
+  			display: inline-block;
+  			margin-left: 80px;
+  			position: static;
 		}
 
 		p{
 			font-weight: 300;
 		}
 
+		.loader{
+			
+  			left: 30%;
+		}
+
 	}
 
-	

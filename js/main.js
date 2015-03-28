@@ -96,13 +96,14 @@ function loadData() {
 			$.each(data.results.collection1, function( index, object ) {
 			
 					rate = Math.round(object.rating);
-					var html = '<div class="movieContainer">';
+					var html = '<div class="movieContainer"><div class="imgMovieContainer">';
 					html += '<a href="';
 					html += object.title.href;
 					
 					html += '"><img class="imgMovie" style="visibility: hidden;" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
-					html += '"></a><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
+					html += '"></a><div class="loader" id="imgLoader' + j;
+					html += '"></div></div><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;
@@ -162,6 +163,7 @@ function loadData() {
 						  img = $("#imgMovie" + n)
 						  img.attr("src", result.tbUrl);
 						  img.attr("style", "visibility: visible;");
+						  //$("#imgLoader" + n).attr("style", "visibility: hidden;");
 						}
 					}, null);
 
