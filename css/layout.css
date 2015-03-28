@@ -203,4 +203,8 @@ body{
 		font-size: 20px;
 	}
 	
+	.topInfo{
+		position: fixed;
+	}
+	
 }
