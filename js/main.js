@@ -117,13 +117,20 @@ function loadData() {
 					html += object.duration;
 					html += '</p> <p id="genre">';
 					var i = 0;
-					for (var genre_tag in object.genre_tags){
-						if (i>0){
-							html += "  |  ";
+					
+					
+					if( Object.prototype.toString.call( object.genre_tags ) === '[object Array]' ) {
+						for (var genre_tag in object.genre_tags){
+							if (i>0){
+								html += "  |  ";
+							}
+							html +=  object.genre_tags[genre_tag].text;
+							i+=1;
 						}
-						html +=  object.genre_tags[genre_tag].text;
-						i+=1;
+					} else {
+						html +=  object.genre_tags.text;
 					}
+					
 					
 					html += '</p></div><div class="movieRight"><p id="description">';
 					if (typeof object.synopsis.text !== 'undefined') {
