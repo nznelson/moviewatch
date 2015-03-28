@@ -70,7 +70,7 @@ var apis = {
 	},
 }
 
-$('#showButton').click(function() {
+function loadData() {
   //alert("sup");
   $('#resultContainer').empty();
   $("#progress").attr("style", "visibility: visible;");
@@ -100,9 +100,9 @@ $('#showButton').click(function() {
 					html += '<a href="';
 					html += object.title.href;
 					
-					html += '"><img class="imgMovie" id="imgMovie' + j + '" src="';
+					html += '"><img class="imgMovie" style="visibility: hidden;" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
-					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
+					html += '"></a><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;
@@ -125,7 +125,7 @@ $('#showButton').click(function() {
 						i+=1;
 					}
 					
-					html += '</p><p id="description">';
+					html += '</p></div><div class="movieRight"><p id="description">';
 					if (typeof object.synopsis.text !== 'undefined') {
 						html += object.synopsis.text;
 					} else {
@@ -152,7 +152,9 @@ $('#showButton').click(function() {
 						  var results = imageSearch.results;
 						  var result = results[0];
 						  // set the correct img src
-						  $("#imgMovie" + n).attr("src", result.tbUrl);	
+						  img = $("#imgMovie" + n)
+						  img.attr("src", result.tbUrl);
+						  img.attr("style", "visibility: visible;");
 						}
 					}, null);
 
@@ -170,7 +172,9 @@ $('#showButton').click(function() {
 		$("#progress").attr("style", "visibility: hidden;");
 	}
   });
-});
+}
+
+$('#showButton').click(loadData);
 
 $('#genreSelect').on('change', function (e) {
     //alert("you changin me");
@@ -180,4 +184,6 @@ $('#genreSelect').on('change', function (e) {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
 });
+
+loadData();
 
