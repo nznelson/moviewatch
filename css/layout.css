@@ -22,7 +22,7 @@ h1{
 }
 
 .cover-container{
-	height: 100vh;
+	height: 70vh;
 	display: table;
 }
 
@@ -90,7 +90,7 @@ h1{
 
 
 .splash{
-	top: -15%;
+	top: -30%;
 	/*top: -50%;*/
 	left: -15%;
 	overflow-x: hidden;
@@ -203,8 +203,6 @@ body{
 		font-size: 20px;
 	}
 	
-	.topInfo{
-		position: fixed;
-	}
 	
+
 }
