@@ -74,7 +74,7 @@
 
 #titleMovie{
 	font-size: 20px;
-	margin-top: 20px;
+	margin-top: 5px;
 	margin-bottom: 0px;
 	line-height: 1.2;
 	
@@ -85,12 +85,13 @@
 #rating{
 	width: 120px;
 	display: inline-block;
+	padding-right: 5px;
 }
 
 #ratingText{
 	display: inline-block;
 	font-size: 12px;
-	padding-left: 5px;
+	
 	padding-right: 20px;
 	color: rgba(255,255,255,.5);
 
@@ -226,6 +227,7 @@ p{
 
 		#ratingText{
 			padding-right: 20px;
+			font-size: 10px;
 		}
 
 		#genre{
@@ -237,22 +239,20 @@ p{
 
 		#duration{
 			padding-right: 10px;
+			font-size: 10px;
 		}
 
 		#titleMovie{
 			font-size: 18px;
-			margin-top: 10px;
+			
 			padding-right: 22px;
 		}
 
 		#description{
-			padding-top: 20px;
+			padding-top: 10px;
 		}
 
 		.topInfo{
-			
-	  		 
-
   			display: inline-block;
   			margin-left: 80px;
   			position: static;
