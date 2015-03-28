@@ -70,7 +70,7 @@ var apis = {
 	},
 }
 
-$('#showButton').click(function() {
+function loadData() {
   //alert("sup");
   $('#resultContainer').empty();
   $("#progress").attr("style", "visibility: visible;");
@@ -172,7 +172,9 @@ $('#showButton').click(function() {
 		$("#progress").attr("style", "visibility: hidden;");
 	}
   });
-});
+}
+
+$('#showButton').click(loadData);
 
 $('#genreSelect').on('change', function (e) {
     //alert("you changin me");
@@ -182,4 +184,6 @@ $('#genreSelect').on('change', function (e) {
             $("#backgroundImg").attr("src", imgSrc);
         }).fadeIn(100);
 });
+
+loadData();
 
