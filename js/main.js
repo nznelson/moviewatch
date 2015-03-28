@@ -100,7 +100,7 @@ $('#showButton').click(function() {
 					html += '<a href="';
 					html += object.title.href;
 					
-					html += '"><img class="imgMovie" id="imgMovie' + j + '" src="';
+					html += '"><img class="imgMovie" style="visibility: hidden;" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
 					html += '"></a><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
@@ -152,7 +152,9 @@ $('#showButton').click(function() {
 						  var results = imageSearch.results;
 						  var result = results[0];
 						  // set the correct img src
-						  $("#imgMovie" + n).attr("src", result.tbUrl);	
+						  img = $("#imgMovie" + n)
+						  img.attr("src", result.tbUrl);
+						  img.attr("style", "visibility: visible;");
 						}
 					}, null);
 
