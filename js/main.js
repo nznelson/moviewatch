@@ -102,7 +102,7 @@ $('#showButton').click(function() {
 					
 					html += '"><img class="imgMovie" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
-					html += '"></a><div class="movieRight"><p id="titleMovie"><a target="_blank" href="';
+					html += '"></a><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;
@@ -125,7 +125,7 @@ $('#showButton').click(function() {
 						i+=1;
 					}
 					
-					html += '</p><p id="description">';
+					html += '</p></div><div class="movieRight"><p id="description">';
 					if (typeof object.synopsis.text !== 'undefined') {
 						html += object.synopsis.text;
 					} else {
