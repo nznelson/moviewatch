@@ -81,7 +81,7 @@ var apis = {
 		'latest' : '3sv84w3q'
 	},
 	'western' : {
-		'oldies' : '',
+		'oldies' : '9423ygti',
 		'90s'    : 'cftzpepa',
 		'recent' : 'boaebgtk',
 		'latest' : 'ad7a1aw2'
