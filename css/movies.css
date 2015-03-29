@@ -10,6 +10,7 @@
 .movieContainer{
 	background: #393a3e;
 	border-radius:3px;
+	position: relative;
 	width: 70%;
 	margin: 0 auto;
 	padding: 30px;
@@ -80,7 +81,10 @@
 	
 }
 
-
+.rank{
+	right: 0;
+	position: absolute;
+}
 
 #rating{
 	
@@ -104,6 +108,7 @@
 	text-transform: uppercase;
 	color: rgba(255,255,255,.5);
 	display: inline-block;
+	  padding-right: 20px;
 	
 }
 
