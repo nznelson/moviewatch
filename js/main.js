@@ -56,6 +56,12 @@ var apis = {
 		'recent' : '2gx67pzg',
 		'latest' : 'eg399fhw'
 	},
+	'sport' : {
+		'oldies' : '3kqjxllm',
+		'90s'    : '2hogl3km',
+		'recent' : '5ht2tph6',
+		'latest' : 'b83zjbqw'
+	},
 	'sci_fi' : {
 		'oldies' : '2fpu8lue',
 		'90s'    : '7a1ojg3u',
@@ -68,6 +74,18 @@ var apis = {
 		'recent' : '5acl56ho',
 		'latest' : 'a6eygxv6'
 	},
+	'war' : {
+		'oldies' : 'czkz3qgi',
+		'90s'    : 'a4s9zy6y',
+		'recent' : 'd8yu50vo',
+		'latest' : '3sv84w3q'
+	},
+	'western' : {
+		'oldies' : '',
+		'90s'    : 'cftzpepa',
+		'recent' : 'boaebgtk',
+		'latest' : 'ad7a1aw2'
+	}
 }
 
 function loadData() {
