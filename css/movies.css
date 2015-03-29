@@ -68,13 +68,13 @@
 
 .movieRight{
 	display: inline-block;
-	margin-left: 90px;
+	margin-left: 100px;
 	position: static;
 }
 
 #titleMovie{
 	font-size: 20px;
-	margin-top: 5px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 1.2;
 	
@@ -83,7 +83,7 @@
 
 
 #rating{
-	width: 120px;
+	
 	display: inline-block;
 	padding-right: 5px;
 }
@@ -129,6 +129,7 @@
 #cast{
 	font-size: 13px;
 	color: rgba(255,255,255,.5);
+	margin-bottom: 0;
 	
 }
 
@@ -216,6 +217,7 @@ p{
 
 		.movieRight{
 			margin-left: 0;
+			  min-height: 100px;
 		}
 
 		.movieContainer{
@@ -250,7 +252,7 @@ p{
 		}
 
 		#description{
-			padding-top: 10px;
+			
 		}
 
 		.topInfo{
