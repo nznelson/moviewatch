@@ -9,6 +9,7 @@
 
 .movieContainer{
 	background: #393a3e;
+	min-height: 160px;
 	border-radius:3px;
 	position: relative;
 	width: 70%;
