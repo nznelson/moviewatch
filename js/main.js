@@ -188,6 +188,7 @@ function loadData() {
 					// find the movie poster image
 					imageSearch.execute(object.title.text + ' ' + object.year + ' movie poster');
 					j+=1;
+					return index < 30;
 			});
 		}
 	},
