@@ -106,7 +106,7 @@ function loadData() {
 	success: function (data) {
 		//Do something with the response
 		//alert("success");
-		console.log(data);
+		//console.log(data);
 		$("#progress").attr("style", "visibility: hidden;");
 		r = $('#resultContainer');
 		if (data.count > 0){
