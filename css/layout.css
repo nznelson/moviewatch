@@ -1,3 +1,8 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/Track.ttf);
+}
+
 .site-wrapper-inner{
 	background: rgba(38,44,50,.9);
 	margin-bottom: 0;
@@ -13,6 +18,12 @@ h1{
 	font-size: 22px;
 	font-weight: 200;
 
+}
+
+h2{
+	font-family: myFirstFont;
+	text-transform: uppercase;
+	font-size: 58px;
 }
 
 
