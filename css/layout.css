@@ -24,6 +24,7 @@ h2{
 	font-family: myFirstFont;
 	text-transform: uppercase;
 	font-size: 58px;
+	margin-bottom: -20px;
 }
 
 
@@ -73,6 +74,9 @@ h2{
 	margin-bottom: 0;
 }
 
+select option{
+	color: #fff;
+}
 
 .cover-heading{
 	padding-bottom: 0px;
@@ -87,10 +91,10 @@ h2{
 	font-size: 22px;
 	padding-left: 10px;
 
-	background: transparent;
-	background-color: transparent;
+	background: rgba(255,255,255,.5);
+	
 
-	color: #fff;
+	color: #000;
 	
 
 }
@@ -100,7 +104,7 @@ h2{
 }
 
 .form-control:hover{
-	background: rgba(255,255,255,.2);
+	background: rgba(255,255,255,.7);
 }
 
 
