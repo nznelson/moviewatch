@@ -112,13 +112,13 @@ function loadData() {
 		if (data.count > 0){
 			var j=0;
 			$.each(data.results.collection1, function( index, object ) {
-			
+					imgName = object.title.text + ' ' + object.year + ' movie poster';
 					rate = Math.round(object.rating);
 					var html = '<div class="movieContainer"><div class="imgMovieContainer">';
 					html += '<a href="';
 					html += object.title.href;
 					
-					html += '"><img class="imgMovie" style="visibility: hidden;" id="imgMovie' + j + '" src="';
+					html += '"><img class="imgMovie" style="visibility: hidden;"' + 'alt="' + imgName + '" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
 					html += '"></a><div class="loader" id="imgLoader' + j;
 					html += '"></div></div><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
@@ -186,7 +186,7 @@ function loadData() {
 					}, null);
 
 					// find the movie poster image
-					imageSearch.execute(object.title.text + ' ' + object.year + ' movie poster');
+					imageSearch.execute(imgName);
 					j+=1;
 					return index < 30;
 			});
