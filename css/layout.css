@@ -27,6 +27,15 @@ h2{
 	margin-bottom: -20px;
 }
 
+p{
+	font-weight: 300;
+	letter-spacing: .5px;
+}
+
+option select{
+	
+}
+
 
 
 .cover{
