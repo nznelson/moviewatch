@@ -123,6 +123,22 @@ h2{
 	display: table;
 }
 
+.mastfoot .btn{
+	background: transparent;
+	border: solid 1px #ff3265;
+	color: #ff3265;
+	margin-bottom: 20px;
+
+}
+
+.mastfoot .btn:hover{
+	background: #ff3265;
+	
+	color: #fff;
+	
+	
+}
+
 body{
 	background: #282c30;
 
