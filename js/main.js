@@ -56,6 +56,12 @@ var apis = {
 		'recent' : '2gx67pzg',
 		'latest' : 'eg399fhw'
 	},
+	'romance' : {
+		'oldies' : '5lyzxq1a',
+		'90s'    : '6i837dtq',
+		'recent' : '4ng7oj5w',
+		'latest' : '5yw16vwe'
+	},
 	'sport' : {
 		'oldies' : '3kqjxllm',
 		'90s'    : '2hogl3km',
