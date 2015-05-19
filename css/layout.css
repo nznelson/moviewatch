@@ -32,8 +32,8 @@ p{
 	letter-spacing: .5px;
 }
 
-option select{
-	color: rgba(0,0,0,.5);
+select{
+	background: #000;
 }
 
 
