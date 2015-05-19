@@ -33,7 +33,7 @@ p{
 }
 
 select{
-	background: #000;
+	background: rgba(0,0,0,.2) !important;
 }
 
 
@@ -101,7 +101,7 @@ select{
 	background: rgba(255,255,255,.5);
 	
 
-	color: #000;
+	color: #fff;
 	
 
 }
