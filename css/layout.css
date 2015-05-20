@@ -125,6 +125,17 @@ select{
 	background: rgba(0,0,0,.5);
 }
 
+.twitter{
+	padding-top: 35px;
+	opacity: .7;
+	font-size: 2.5em;
+	cursor: pointer;
+}
+
+.twitter:hover{
+	opacity: 1;
+}
+
 .mastfoot{
 	text-align: center;
 	margin: 0 auto;
