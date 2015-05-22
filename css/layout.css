@@ -211,6 +211,15 @@ body{
   }
 }
 
+@media only screen and (min-width : 1600px){
+	.splash{
+		width: 100%;
+		min-height:100%;
+		left: 0;
+		top: 0;
+	}
+	}
+
 @media only screen and (max-width : 960px){
 	.btn-default, .btn-lg, .btn-default:focus{
 		width: 300px;
