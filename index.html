@@ -10,6 +10,21 @@
   <meta name="description" content="Browse IMDB's top rated movies by genre and year. Find the best ones to watch.">
   <meta name="author" content="Nelson Shaw and Sebastian Petravic">
   <meta name="robots" content="index, follow">
+  <!--FACEBOOK-->
+  <meta property="og:title" content="Find the best movies to watch" >
+  <meta property="og:site_name" content="Film Hunt">
+  <meta property="og:url" content="" >
+  <meta property="og:description" content="" >
+  <meta property="og:image" content="http://sebastianpetravic.com/img/film-hunt-cover.jpg" >
+  <meta property="og:type" content="website" >
+  <meta property="og:locale" content="en_NZ" >
+  <!--TWITTER-->
+  <meta property="twitter:card" content="summary" >
+  <meta property="twitter:title" content="Find the best movies to watch" >
+  <meta property="twitter:description" content="" >
+  <meta property="twitter:creator" content="@film_hunt" >
+  <meta property="twitter:url" content="" >
+  <meta property="twitter:image" content="http://sebastianpetravic.com/img/film-hunt-cover.jpg" >
   <link rel="icon" href="./favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='textcss'>
 
@@ -33,103 +48,103 @@
 
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-62534827-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-62534827-1', 'auto');
+  ga('send', 'pageview');
   </script>
 
-  </head>
+</head>
 
-      <body>
+<body>
 
-        <div class="site-wrapper">
+  <div class="site-wrapper">
 
-          <img src="img/drama.jpg" class="splash" id="backgroundImg" alt="Background Image">
-          <div class="site-wrapper-inner">
-            <div class="cover-container">
-              <div class="inner cover">
-                
-                <h2 style="font-size:20;">film hunt</h2>
-                <div id="searchContainer">
-                  <h1 class="cover-heading">
-                    <p style="display: inline-block;">I want the best </p> 
-                    <div style="display: inline-block;vertical-align: middle;"  >
-                      <select class=" form-control" id="genreSelect">
-                       <option value="action">Action</option>
-                       <option value="adventure">Adventure</option>
-                       <option value="animation">Animation</option>
-                       <option value="comedy" >Comedy</option>
-                       <option value="crime">Crime</option>
-                       <option value="drama" selected>Drama</option>
-                       <option value="family">Family</option>
-                       <option value="fantasy">Fantasy</option>
-                       <option value="horror" >Horror</option>
-                       
-                       <option value="romance">Romance</option>
-                       <option value="sci_fi">Sci-Fi</option>
-                       <option value="sport">Sport</option>
-                       <option value="thriller">Thriller</option>
-                       <option value="war">War</option>
-                       <option value="western">Western</option>
-                     </select> </div>
+    <img src="img/drama.jpg" class="splash" id="backgroundImg" alt="Background Image">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          
+          <h2 style="font-size:20;">film hunt</h2>
+          <div id="searchContainer">
+            <h1 class="cover-heading">
+              <p style="display: inline-block;">I want the best </p> 
+              <div style="display: inline-block;vertical-align: middle;"  >
+                <select class=" form-control" id="genreSelect">
+                 <option value="action">Action</option>
+                 <option value="adventure">Adventure</option>
+                 <option value="animation">Animation</option>
+                 <option value="comedy" >Comedy</option>
+                 <option value="crime">Crime</option>
+                 <option value="drama" selected>Drama</option>
+                 <option value="family">Family</option>
+                 <option value="fantasy">Fantasy</option>
+                 <option value="horror" >Horror</option>
+                 
+                 <option value="romance">Romance</option>
+                 <option value="sci_fi">Sci-Fi</option>
+                 <option value="sport">Sport</option>
+                 <option value="thriller">Thriller</option>
+                 <option value="war">War</option>
+                 <option value="western">Western</option>
+               </select> </div>
 
-                     <p style="display: inline-block;"> movies from</p>
-                     <div style="display: inline-block;vertical-align: middle;" class="col-med-6 col-med-offset-3" >
-                      <select class="form-control" id="yearSelect">
-                        <option value="oldies">Ages ago</option>
-                        <option value="90s" selected>1990 - 2004</option>
-                        <option value="recent">2005 - 2013</option>
-                        <option value="latest">2014 - 2015</option>
-                      </select> </div>
+               <p style="display: inline-block;"> movies from</p>
+               <div style="display: inline-block;vertical-align: middle;" class="col-med-6 col-med-offset-3" >
+                <select class="form-control" id="yearSelect">
+                  <option value="oldies">Ages ago</option>
+                  <option value="90s" selected>1990 - 2004</option>
+                  <option value="recent">2005 - 2013</option>
+                  <option value="latest">2014 - 2015</option>
+                </select> </div>
 
-                      <p class="lead">
-                        <a href="#" class="btn btn-lg btn-default" id="showButton">SHOW ME</a>
-                      </p>
+                <p class="lead">
+                  <a href="#" class="btn btn-lg btn-default" id="showButton">SHOW ME</a>
+                </p>
 
-                    </h1>
-
-
-                  </div>
-                    <a href="https://twitter.com/film_hunt" target="black"><i class="fa fa-2x fa-twitter twitter"></i></a>
-                </div>
+              </h1>
 
 
-              </div>
+            </div>
+            <a href="https://twitter.com/film_hunt" target="black"><i class="fa fa-2x fa-twitter twitter"></i></a>
+          </div>
 
-              <div id="resultContainer">
 
-		</div>
-
-        
-      <div class="bottom">
-
-        <div class="spinner" id="progress" style="visibility: hidden;">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
         </div>
 
-        <div class="mastfoot">
-          <div class="inner">
+        <div id="resultContainer">
+
+        </div>
+
+        
+        <div class="bottom">
+
+          <div class="spinner" id="progress" style="visibility: hidden;">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
              <p class="lead">
-                      <a href="mailto:info@filmhunt.co" class="btn btn-lg btn-default">CONTACT</a>
-                </p>
+              <a href="mailto:info@filmhunt.co" class="btn btn-lg btn-default">CONTACT</a>
+            </p>
             <p>Made with <3 by the wolf pack <a href="https://github.com/nznelson/moviewatch">Nelson Shaw</a> and <a href="https://www.behance.net/SebastianPetravic">Sebastian Petravic</a></p>
           </div>
         </div>
 
-       </div> 
+      </div> 
 
 
 
 
-
-      </div>
 
     </div>
+
+  </div>
 
 
 
@@ -140,7 +155,7 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="js/ie10-viewport-bug-workaround.js"></script>
-		  <script src="https://www.google.com/jsapi"></script>
+        <script src="https://www.google.com/jsapi"></script>
         <script src="js/main.js"></script>
       </body>
       </html>
