@@ -65,7 +65,7 @@
 
 
 .movieRight{
-	display: inline-block;
+	display: block;
 	margin-left: 100px;
 	position: static;
 }
