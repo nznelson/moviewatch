@@ -127,7 +127,7 @@ function loadData() {
 					html += '"><img class="imgMovie" style="visibility: hidden;"' + 'alt="' + imgName + '" id="imgMovie' + j + '" src="';
 					//html += object.poster.src;
 					html += '"></a><div class="loader" id="imgLoader' + j;
-					html += '"></div></div><div class="movieRight topInfo"><p id="titleMovie"><a target="_blank" href="';
+					html += '"></div></div><div class="movieRight topInfo"><p id="rank">'+(j+1)+'</p><p id="titleMovie"><a target="_blank" href="';
 					html += object.title.href;
 					html += '">';
 					html += object.title.text;
