@@ -219,5 +219,7 @@ $('#genreSelect').on('change', function (e) {
         }).fadeIn(100);
 });
 
+
+
 loadData();
 

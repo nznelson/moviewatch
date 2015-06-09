@@ -56,8 +56,8 @@
 }
 
 .imgMovieContainer{
-	width: 70px;
-	height:100px;	
+	width: 85px;
+  height: 125px;	
 	vertical-align: top;
 	position: absolute;		
 }
@@ -92,7 +92,7 @@
 
 #rating{
 	
-	
+	height: 7px;
 	padding-right: 5px;
 }
 
