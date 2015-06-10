@@ -39,7 +39,7 @@ body{
 
 .trailer-splash{
 	width: 100%;
-	top:0;
+	
 	position: fixed;
 	z-index: -10;
 }
@@ -131,7 +131,7 @@ body{
 	border: 1px solid #fff;
 	box-shadow: none;
 	height: 60px;
-	padding-top: 18px;
+	margin-bottom: 15px;
 	border-radius: 4px;
 	text-align: center;
 	transition: all 0.2s ease;
@@ -139,10 +139,30 @@ body{
 
 }
 
-.btn-buy:hover{
-	background-color: #fff;
-	border-color: #fff;
-	color: #28292c;
+.btn-buy p{
+	margin-top: 7px;
+	display: inline-block;
+}
+
+.btn-buy img{
+	display: inline-block;
+	padding-right: 10px;
+	height: 12px;
+}
+
+.btn-buy .amazon{
+	height: 15px;
+}
+
+.btn-buy .apple{
+	height: 15px;
+	margin-top: -3px;
+}
+
+.btn-buy:hover, .btn-buy:focus{
+	background-color: rgba(255,255,255,.15);
+	border-color: rgba(255,255,255,1);
+	color: #fff;
 }
 
 
@@ -151,13 +171,14 @@ body{
 	width: auto;
 	padding-right: 20px;
 	margin-bottom: 5px;
+	margin-top: 3px;
 }
 
 #ratingText{
 	font-size: 17px;
 	color:#fff;
 	margin-bottom: 15px;
-	margin-top: 0;
+	margin-top: 10px;
 }
 
 #genre, #duration, #cast{
@@ -193,7 +214,7 @@ body{
 	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: 24px;
+	font-size: 22px;
 }
 
 
