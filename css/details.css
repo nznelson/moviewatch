@@ -119,7 +119,7 @@ body{
 
 
 
-.movie{
+.details-container{
 	
 	
 	padding-top: 40px;
@@ -127,6 +127,23 @@ body{
 	
 }
 
+.btn-buy{
+	border: 1px solid #fff;
+	box-shadow: none;
+	height: 60px;
+	padding-top: 18px;
+	border-radius: 4px;
+	text-align: center;
+	transition: all 0.2s ease;
+	display: block;
+
+}
+
+.btn-buy:hover{
+	background-color: #fff;
+	border-color: #fff;
+	color: #28292c;
+}
 
 
 #rating{
@@ -171,6 +188,14 @@ body{
 	min-height: 500px;
 	background-color: #28292c;
 }
+
+.where-to-watch h1{
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+}
+
 
 
 
