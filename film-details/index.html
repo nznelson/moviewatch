@@ -67,12 +67,27 @@
       <div class="nav">
         <a href="../"><p class="logo">filmhunt</p></a>
       </div>
-      <a href""><img class="play" src="../img/play.png"></a>
+      <img class="play play-video modal-open" src="../img/play.png">
       <p class="movieTitle">interstellar</p>
       <!-- <img class="gradient" src="../img/gradient.png"> -->
 
+       <div class="video-modal hidden modal-close">
+      <div class="video-modal-container ">
+        <div class="video-container ">
+          <a href="#" class="modal-close"></a>
+          
+          <div id="embed-container" class="embed-container">
+            <iframe id="embed-video" poster="/img/video-poster.jpg" controls="controls" src="https://www.youtube.com/embed/2LqzF5WauAw?modestbranding=1;controls=2;hd=1;showinfo=0;rel=0;fs=1;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>  
+
+    </div>
+
       
     </div>
+
+   
 
 
     <div class="film-info">
@@ -146,5 +161,6 @@
   <script src="../https://www.google.com/jsapi"></script>
   <script src="../js/main.js"></script>
   <script src="../js/fade.js"></script>
+  <script src="../js/video.js"></script>
 </body>
 </html>
