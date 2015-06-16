@@ -63,7 +63,7 @@ select{
 }
 
 .btn-default, .btn-lg, .btn-default:focus{
-	border-radius: 3px;
+	border-radius: 5px;
 	border: #64ffeb;
 	width: 200px;
 	height: 60px;
