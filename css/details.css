@@ -204,7 +204,7 @@ body{
 
 .film-info{
 	background-color: #2e2f34;
-	display: inline-block;
+	display: inline-flex;
 
 	
 
@@ -319,6 +319,12 @@ body{
 		width: 90%;
 		
 	}
+	.trailer-splash{
+		width: 180%;
+		left:-10%;
+
+
+	}
 }
 
 @media only screen and (max-width : 560px) {
@@ -327,5 +333,14 @@ body{
 		width: 100%;
 		
 	}
+
+	.trailer-splash{
+		width: 300%;
+		left: -60%;
+
+
+	}
+
+	
 }
 
