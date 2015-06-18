@@ -94,8 +94,11 @@
                   <option value="recent">2005 - 2013</option>
                   <option value="latest">2014 - 2015</option>
                 </select> </div>  -->
-
-               <div id="slider" style="width:250px;display:inline-block;margin-left:20px;margin-right:20px;"></div>
+                <div class="slider-div">
+                <p class="min" id="amount">1990</p><p> to </p><p class="max">2000</p>
+                
+               <div id="slider" style=""></div>
+               </div>
            
 
                 <p class="lead">
@@ -190,7 +193,8 @@
         <script>
 $( "#slider" ).slider({
   range: true,
-  values: [ 17, 67 ]
+  values: [ 1990, 2015 ]
+
 });
 // Hover states on the static widgets
 $( "#dialog-link, #icons li" ).hover(
@@ -200,7 +204,9 @@ $( "#dialog-link, #icons li" ).hover(
   function() {
     $( this ).removeClass( "ui-state-hover" );
   }
+  
 );
+
 </script>
       </body>
       </html>

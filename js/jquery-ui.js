@@ -1061,8 +1061,8 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 	options: {
 		animate: false,
 		distance: 0,
-		max: 100,
-		min: 0,
+		max: 2015,
+		min: 1900,
 		orientation: "horizontal",
 		range: false,
 		step: 1,
@@ -1079,6 +1079,8 @@ var slider = $.widget( "ui.slider", $.ui.mouse, {
 	// number of pages in a slider
 	// (how many times can you page up/down to go through the whole range)
 	numPages: 5,
+
+	
 
 	_create: function() {
 		this._keySliding = false;
