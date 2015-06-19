@@ -147,7 +147,7 @@ body{
 }
 
 .blur{
-	
+
 }
 
 .gradient{
@@ -162,9 +162,9 @@ body{
 
 .play{
 	width: 100px;
-	margin-top: 90px;
+	margin-top: 110px;
 	opacity: .8;
-	margin-bottom: 90px;
+	margin-bottom: 110px;
 	cursor: pointer;
 
 }
@@ -204,8 +204,9 @@ body{
 }
 
 .film-info{
-	background-color: #2e2f34;
+	background-color: #33353D;
 	display: inline-flex;
+	opacity: .98;
 
 	
 
@@ -304,8 +305,9 @@ body{
 }
 
 .where-to-watch{
-	min-height: 500px;
-	background-color: #28292c;
+	width: 100%;
+  display: inline-flex;
+	background-color: #2D2E35;
 }
 
 .where-to-watch h1{
