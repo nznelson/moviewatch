@@ -308,6 +308,7 @@ body{
 	width: 100%;
   display: inline-flex;
 	background-color: #2D2E35;
+	min-height: 250px;
 }
 
 .where-to-watch h1{
