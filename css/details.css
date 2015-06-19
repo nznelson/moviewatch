@@ -276,7 +276,16 @@ body{
 	margin-top: 10px;
 }
 
-#genre, #duration, #cast{
+#year{
+	  margin: 0;
+ 
+  text-transform: uppercase;
+  
+  display: inline-block;
+  padding-right:20px;
+}
+
+#genre, #duration, #cast, #year{
 	color: rgba(255,255,255,.7);
 	font-size: 13px;
 }
