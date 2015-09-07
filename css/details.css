@@ -335,7 +335,7 @@ body{
     z-index: 1;
   /*background-color: #292A30;*/
   background: rgba(38,44,50,.8);
-  min-height: 250px;
+  min-height: 70%;
 }
 
 .where-to-watch-group{
