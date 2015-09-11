@@ -164,16 +164,24 @@ body{
 
 .play{
 	width: 100px;
-	margin-top: 200px;
-	margin-bottom: 200px;
+	margin:200px 0;
 	opacity: .8;
-	
 	cursor: pointer;
+			-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 
 }
 
 .play:hover{
 	opacity: 1;
+		-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .nav{
@@ -185,10 +193,8 @@ body{
 	width: 100%;
 	font-family: myFirstFont;
 	font-size: 20px;
-	margin-top: 0;
-	padding-top: 20px;
-	padding-bottom: 17px;
-	margin-bottom: 0;
+	margin:0;
+	padding:20px 0 17px 0;
 	opacity: .8;
 }
 
@@ -200,44 +206,28 @@ body{
 
 	font-size: 22px;
 	letter-spacing: 2px;
-	margin-top: 30px;
-	margin-bottom: 0px;
+	margin:30px 0 0;
 	font-family: myfirstfont;
 	
 }
 
 .film-info{
-	/*background-color: #33353D;*/
+
 	background: rgba(38,44,50,.8);
 	display: inline-flex;
 	z-index: 2;
-	/*box-shadow: 0 2px 20px rgba(0,0,0,0.2);*/
-	/*border-left:solid 4px #fff;*/
-
-	/* width: 100%; */
-	
 
 }
 
 
 
 .details-container{
-	
-	
-	padding-top: 80px;
-	padding-bottom: 40px;
-	padding-left: 50px;
-	padding-right: 50px;
-	
+	padding:80px 50px 40px;
 }
 
 .watch-container{
-	
-	
-	/*padding-top: 70px;*/
-	padding-bottom: 60px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding:0 50px 60px;
+
 	
 }
 
@@ -250,12 +240,18 @@ body{
 	text-align: center;
 	opacity: .9;
 	display: block;
+				-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 
 }
 
 .btn-buy p{
 	margin-top: 7px;
 	display: inline-block;
+	font-weight: 400;
 }
 
 .btn-buy img{
@@ -274,10 +270,16 @@ body{
 }
 
 .btn-buy:hover, .btn-buy:focus{
-	background-color: rgba(255,255,255,.15);
-	border-color: rgba(255,255,255,1);
+	background-color: rgba(255,255,255,.3);
+	border-color: rgba(255,255,255,.3);
+
 	color: #fff;
 	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 
@@ -345,7 +347,7 @@ body{
 .where-to-watch h1{
 	margin: 0;
 	
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	font-size: 20px;
 }
 
